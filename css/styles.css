@@ -148,6 +148,7 @@ header .container {
   font-weight: 500;
   font-size: 14px;
   color: var(--selection-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -197,6 +198,7 @@ header .container {
   align-items: center;
   justify-content: center;
   /* margin-top: 94px; */
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -258,6 +260,7 @@ header .container {
   border-style: none;
   cursor: pointer;
   padding: 10px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -433,6 +436,7 @@ figcaption {
   /* margin-bottom: 30px; */
   fill:#afb1b8;
   gap:10px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -445,6 +449,7 @@ figcaption {
   align-items: center;
   border-radius: 50%;
   transition-property: fill, var(--background-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -523,6 +528,9 @@ fill: var(--background-color);
   align-items: center;
   justify-content: center; */
   fill:currentColor;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-icons:hover,
 .company-icons:active {
@@ -601,6 +609,9 @@ margin-bottom: 20px;
 .footer-icons {
   display:flex;
   /* gap:22px; */
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill:#FFFFFF;
 }
 .footer-social-icons:hover,
@@ -635,6 +646,9 @@ margin-bottom: 20px;
   gap: 8px;
   /* margin-top: 94px; */
   margin-bottom: 50px;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-all {
   width: 121px;
@@ -648,6 +662,9 @@ margin-bottom: 20px;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-sites {
@@ -663,6 +680,9 @@ margin-bottom: 20px;
   letter-spacing: 0.03em;
   color: var(--brand-color);
   cursor: pointer;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-applications {
   width: 114px;
@@ -677,6 +697,9 @@ margin-bottom: 20px;
   letter-spacing: 0.03em;
   color: var(--brand-color);
   cursor: pointer;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-design {
   width: 91px;
@@ -691,6 +714,9 @@ margin-bottom: 20px;
   letter-spacing: 0.03em;
   color: var(--brand-color);
   cursor: pointer;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-marketing {
   width: 121px;
@@ -705,6 +731,9 @@ margin-bottom: 20px;
   letter-spacing: 0.03em;
   color: var(--brand-color);
   cursor: pointer;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list {
   /* list-style-type: none; */
