@@ -279,11 +279,13 @@ header .container {
   /* display: flex; */
   transition-property: opacity, visibility;
   z-index: 1;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   /* transform:scale(0); */
   visibility: hidden;
-  /* opacity: 0; */
+  opacity: 0;
   pointer-events: none;
 }
 .modal {
@@ -448,8 +450,8 @@ figcaption {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition-property: fill, var(--background-color);
-  transition-property: color;
+  /* transition-property: fill, var(--background-color); */
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -513,6 +515,9 @@ fill: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: center;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-link:hover,
 .company-link:focus{
@@ -528,9 +533,9 @@ fill: var(--background-color);
   align-items: center;
   justify-content: center; */
   fill:currentColor;
-    transition-property: color;
+    /* transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .company-icons:hover,
 .company-icons:active {
@@ -538,25 +543,26 @@ fill: var(--background-color);
   fill: var(--selection-color);
   /* border: 1px solid var(--selection-color) */
 }
-.customers-company-list li:hover,
+/* .customers-company-list li:hover,
 .customers-company-list li:active {
   border: 1px solid var(--selection-color);
-}
+} */
 .footer {
   background-color: var(--background-footer-header-color);
-  text-decoration: none;
+  /* text-decoration: none; */
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
+  /* padding-left: 215px; */
   /* width: 1200px; */
   /* margin: auto; */
-  display:flex;
-  gap:70px;
+  /* display:flex;
+  gap:70px; */
   
 }
 .container-footer {
   display:flex;
   gap:70px;
+  align-items: baseline;
 }
 .studio-footer {
   color: var(--button-font-color);
@@ -609,10 +615,18 @@ margin-bottom: 20px;
 .footer-icons {
   display:flex;
   /* gap:22px; */
-    transition-property: color;
+    /* transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
   fill:#FFFFFF;
+  gap:10px;
+
+}
+.footer-icons li{
+  background: rgb(68,69,78);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
 .footer-social-icons:hover,
 .footer-social-icons:active {
@@ -620,21 +634,15 @@ margin-bottom: 20px;
   --color6: var(--selection-color);
 
 
+
+
 }
-.button-all:active,
-.button-sites:active,
-.button-applications:active,
-.button-design:active,
-.button-marketing:active,
-.button-all:hover,
-.button-sites:hover,
-.button-applications:hover,
-.button-design:hover,
-.button-marketing:hover {
+.portfolio-btn:active,
+.portfolio-btn:hover{
   color: var(--button-font-color);
   background-color: var(--selection-color);
-  justify-content: center;
-  align-content: space-between;
+  /* justify-content: center;
+  align-content: space-between; */
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -646,15 +654,16 @@ margin-bottom: 20px;
   gap: 8px;
   /* margin-top: 94px; */
   margin-bottom: 50px;
-    transition-property: color;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border:none;
+
 }
-.button-all {
-  width: 121px;
-  height: 38px;
+.portfolio-btn {
+  padding:6px 22px;
   font-family: inherit;
-  background-color: var(--background-color);
+  background-color:#F5F4FA;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -662,12 +671,12 @@ margin-bottom: 20px;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-    transition-property: color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-sites {
+/* .button-sites {
   width: 93px;
   height: 38px;
   font-family: inherit;
@@ -683,8 +692,8 @@ margin-bottom: 20px;
     transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-applications {
+} */
+/* .button-applications {
   width: 114px;
   height: 38px;
   font-family: inherit;
@@ -700,8 +709,8 @@ margin-bottom: 20px;
     transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-design {
+} */
+/* .button-design {
   width: 91px;
   height: 38px;
   font-family: inherit;
@@ -717,8 +726,8 @@ margin-bottom: 20px;
     transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-marketing {
+} */
+/* .button-marketing {
   width: 121px;
   height: 38px;
   font-family: inherit;
@@ -734,7 +743,7 @@ margin-bottom: 20px;
     transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .portfolio-list {
   /* list-style-type: none; */
   display: flex;
@@ -746,6 +755,16 @@ margin-bottom: 20px;
 .portfolio-list li:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+}
+.portfolio-link {
+  display:block;
+  text-decoration: none;
+  color:#000000;
+  
+}
+.portfolio-link:hover,
+.portoflio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-project-name {
   /* height: 36px; */
@@ -769,6 +788,11 @@ margin-bottom: 20px;
 }
 .portfolio-avatar-border {
   border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay{
+  transform:translateY(0);
 }
 .overlay-box {
   position: relative;
@@ -783,6 +807,7 @@ margin-bottom: 20px;
   width: 370px;
   height: 294px;
   background-color: var(--selection-color);
+  transition-property: transform;
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
