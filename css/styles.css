@@ -637,7 +637,7 @@ margin-bottom: 20px;
 
 
 }
-.portfolio-btn:active,
+.portfolio-btn:focus,
 .portfolio-btn:hover{
   color: var(--button-font-color);
   background-color: var(--selection-color);
@@ -671,7 +671,8 @@ margin-bottom: 20px;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  transition-property: color;
+  border:none;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -793,6 +794,9 @@ margin-bottom: 20px;
 .portfolio-link:hover .overlay,
 .portfolio-link:focus .overlay{
   transform:translateY(0);
+  transition-duration: 250ms;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-box {
   position: relative;
@@ -813,9 +817,9 @@ margin-bottom: 20px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0.9;
 }
-.overlay-box:hover .overlay{
+/* .overlay-box:hover .overlay{
   transform: translateY(0);
-}
+} */
 .photo-text {
 font-family: inherit;
 font-size: 18px;
